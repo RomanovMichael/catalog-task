@@ -9,7 +9,10 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
   ],
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
+  css: [
+    '~/assets/css/main.css',
+    '~/assets/css/variables.css',
+  ],
   compatibilityDate: '2024-11-01',
   vite: {
     plugins: [
@@ -24,7 +27,9 @@ export default defineNuxtConfig({
   googleFonts: {
     display: 'swap',
     families: {
-      Roboto: [400, 500, 600, 700],
+      'Roboto': [400, 500, 600, 700],
+      'Inter': [400, 500, 600, 700],
+      'Golos Text': [400, 500, 600, 700],
     },
   },
 })
