@@ -16,24 +16,9 @@ const emit = defineEmits<UiButtonEmits>()
 
 <template>
   <button
-    class="ui-button h-10 rounded-lg px-6 cursor-pointer transition-all"
+    class="h-10 rounded-lg px-6 cursor-pointer bg-black text-white transition-all hover:bg-brand active:scale-95"
     @click="emit('click')"
   >
-    {{ label }}
+    {{ props.label }}
   </button>
 </template>
-
-<style lang="scss">
-.ui-button {
-  background-color: var(--color-dark);
-  color: var(--color-light);
-
-  &:hover {
-    background-color: var(--color-pink);
-  }
-
-  &:active {
-    transform: scale(0.95);
-  }
-}
-</style>

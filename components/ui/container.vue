@@ -1,13 +1,5 @@
-<script setup></script>
-
 <template>
-  <div class="ui-container mx-auto">
+  <div class="ui-container mx-auto max-w-[85rem] px-4 lg:px-0">
     <slot />
   </div>
 </template>
-
-<style lang="scss">
-.ui-container {
-  max-width: 85rem;
-}
-</style>

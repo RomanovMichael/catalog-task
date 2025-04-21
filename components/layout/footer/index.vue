@@ -1,10 +1,8 @@
-<script setup lang="ts"></script>
-
 <template>
-  <footer class="layout-footer py-[1.75rem]">
-    <ui-container class="flex align-center justify-between">
+  <footer class="layout-footer bg-dark py-7">
+    <ui-container class="flex items-center justify-between">
       <ui-logo color-type="light" />
-      <div class="layout-footer__author text-[0.875rem]">
+      <div class="text-light text-sm">
         <span class="block">Разработчик</span>
         <ui-link
           color-type="light"
@@ -16,13 +14,3 @@
     </ui-container>
   </footer>
 </template>
-
-<style lang="scss">
-.layout-footer {
-  background-color: var(--color-dark);
-
-  &__author {
-    color: var(--color-light);
-  }
-}
-</style>
