@@ -9,10 +9,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
   ],
   devtools: { enabled: true },
-  css: [
-    '~/assets/css/main.css',
-    '~/assets/css/variables.css',
-  ],
+  css: ['~/assets/css/main.css'],
   compatibilityDate: '2024-11-01',
   vite: {
     plugins: [

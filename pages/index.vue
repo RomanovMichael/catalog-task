@@ -1,16 +1,21 @@
 <script setup></script>
 
 <template>
-  <div class="d">
-    <ui-button
-      label="В корзину"
-      @click="console.log('gkgk')"
-    />
+  <div class="page-home flex align-center justify-center">
+    <nuxt-link
+      class=""
+      to="/catalog"
+    >caral</nuxt-link>
   </div>
 </template>
 
 <style lang="scss">
-.d {
-  min-height: 100vh;
+.page-home {
+  a {
+    color: var(--color--pink);
+    &:hover {
+      opacity: 0.64;
+    }
+  }
 }
 </style>

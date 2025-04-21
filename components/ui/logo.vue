@@ -10,9 +10,9 @@ const props = defineProps({
 
 <template>
   <nuxt-link
-    to="#"
+    to="/"
     :class="`ui-logo--${props.colorType}`"
-    class="ui-logo block text-[2rem] font-bold transition-all duration-200 font-inter"
+    class="ui-logo block text-[2rem] font-bold font-inter transition-all duration-200"
   >
     Brand Name
   </nuxt-link>
@@ -20,17 +20,18 @@ const props = defineProps({
 
 <style lang="scss">
 .ui-logo {
-    user-select: none;
+  user-select: none;
 
-    &--light {
-        color: var(--color-light);
-    }
+  &:hover {
+    color: var(--color-pink);
+  }
 
-    &--dark {
-        color: var(--color-dark);
-    }
-    &:hover {
-        color: var(--color-pink);
-    }
+  &--light {
+    color: var(--color-light);
+  }
+
+  &--dark {
+    color: var(--color-dark);
+  }
 }
 </style>

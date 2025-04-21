@@ -3,6 +3,9 @@
 </script>
 
 <template>
+  <div>
+    catalog
+  </div>
 </template>
 
 <style lang="scss"></style>
