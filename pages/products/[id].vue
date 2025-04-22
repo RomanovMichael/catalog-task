@@ -14,6 +14,7 @@
         <h1 class="text-2xl font-bold">
           {{ product.name }}
         </h1>
+
         <p class="text-caption">
           {{ product.brand }}
         </p>
@@ -44,13 +45,17 @@
 import { useRoute } from 'vue-router'
 import { useProductStore } from '~/store/product'
 import { formatPrice } from '~/utils/format'
+import type { Product } from '~/types/product'
 
 const route = useRoute()
 const id = route.params.id as string
-
 const store = useProductStore()
 
+const { data: productFromServer } = await useAsyncData<Product>(`product-${id}`, () =>
+  $fetch(`/api/products/${id}`),
+)
+
 const product = computed(() =>
-  store.products.find(item => item.url.endsWith(`/${id}`)),
+  store.products.find(item => item.url.endsWith(`/${id}`)) ?? productFromServer.value ?? null,
 )
 </script>
