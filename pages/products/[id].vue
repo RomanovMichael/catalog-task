@@ -1,5 +1,5 @@
 <template>
-  <section class="py-10">
+  <section class="page-products-detail w-full py-10">
     <ui-container>
       <div
         v-if="product"

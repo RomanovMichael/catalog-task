@@ -15,7 +15,7 @@ const props = defineProps({
 })
 
 const colorMap = {
-  pink: 'text-brand',
+  pink: 'text-pink-500',
   white: 'text-white',
 }
 </script>

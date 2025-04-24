@@ -1,5 +1,5 @@
 <template>
-  <section class="py-10">
+  <section class="page-products w-full py-10">
     <ui-container>
       <h1 class="text-2xl font-bold mb-6">
         Каталог товаров
@@ -21,7 +21,7 @@
 
       <div
         v-else
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6"
       >
         <product-card
           v-for="product in products"
